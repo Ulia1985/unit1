@@ -4,6 +4,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 class CashbackHackServiceTest {
+    @org.testng.annotations.Test
+    void testRemain1000() {
+        CashbackHackService service = new CashbackHackService();
+        int amount = 1000;
+        int actual = service.remain(amount);
+        int expected = 0;
+        assertEquals(actual, expected);
+    }
 
     @org.testng.annotations.Test
     void testRemainMore1000() {
